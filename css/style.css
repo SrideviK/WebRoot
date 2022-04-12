@@ -1,0 +1,111 @@
+
+.container-fluid {
+    background-color: aquamarine;
+    border-bottom: 1px black solid;
+    border-bottom: 1px black solid;
+    margin-top:1em;
+    font-family:sans-serif;
+}
+.about{
+    display:flex;
+}
+.item{
+    border:1px black solid;
+    margin-top:1em;
+    padding-top:1em;
+}
+
+.image {
+    float: left;
+    height: 50px;
+    margin: 0px;
+    padding-right:1em;
+}
+.about p {
+    word-wrap: break-word;
+}
+
+.strong{
+    font-weight:bold;
+}
+
+@media only screen and (min-width: 100px) {
+    /* For tablets: 
+
+     this will change the container class background to red when tablet*/
+
+    .container-fluid {
+        background-color: blanchedalmond;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+     /*For desktop: will change the container class to orange*/
+
+    .container-fluid {
+        background-color: lightgreen;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* For desktop: will change the container class to orange*/
+
+.container-fluid {
+        background-color: lightyellow;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+     /*For desktop: will change the container class to orange
+*/
+    .container-fluid {
+        background-color: lightsalmon;
+    }
+}
+
+/*Orientation of landscape */
+
+    /*@media only screen and (orientation: landscape) {*/
+        /* this will change the background to light blue when view is landscape */
+        /*.col {
+            background-color: pink;
+        }
+        
+    }*/
+
+
+
+
+
+/*
+@media only screen and (max-width: 576px) {
+    .col {
+        display: block;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .col {
+        display: block;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .col {
+        display: block;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .col {
+        display: block;
+        width: 80%;
+    }
+}
+
+*/
+
