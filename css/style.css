@@ -1,18 +1,30 @@
 
+.main{
+    width:70%;
+    margin:auto;
+}
 .container-fluid {
-    background-color: aquamarine;
+    /*    background-color: aquamarine;
     border-bottom: 1px black solid;
-    border-bottom: 1px black solid;
-    margin-top:1em;
-    font-family:sans-serif;
+    border-bottom: 1px black solid;*/
+    display: flex;
+    flex-direction: column;
+    margin-top: -1.5em;
+    font-family: 'Arial Rounded MT';
+}
+a{
+    text-decoration:none;
 }
 .about{
     display:flex;
+    
 }
 .item{
-    border:1px black solid;
-    margin-top:1em;
-    padding-top:1em;
+   /* border:1px black solid;*/
+/*  margin-top:1em;*/
+    padding:1em;
+    font-family:Arial;
+    font-size:1em;
 }
 
 .image {
@@ -24,11 +36,56 @@
 .about p {
     word-wrap: break-word;
 }
-
-.strong{
-    font-weight:bold;
+.strong {
+    font-weight: bold;
+    font-family: 'Arial Rounded MT';
 }
 
+.resources {
+    background-color: palevioletred;
+    width: 70%;
+    margin: auto;
+    border: 1px black solid;
+    padding: 1em;
+    font-family: 'Arial Rounded MT';
+}
+.description{
+    font-family:Arial;
+}
+.navbar{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    padding:1em;
+    background-color:palevioletred;
+    font-family:'Arial Rounded MT';
+}
+.resourceNav {
+    display: flex;
+    flex-direction: row;
+    background-color: palevioletred;
+    justify-content:space-evenly;
+}
+    .resourceNav a {
+        border: 1px black solid;
+        padding:.5em .4em;
+        margin:0em;
+    }
+    .resourceDescription {
+        background-color: lightgrey;
+        width: 70%;
+        margin: auto;
+        border: 1px black solid;
+        padding: 1em;
+        font-family: 'Arial Rounded MT';
+    }
+nav a {
+    border: 1px black solid;
+    padding: .5em;
+    color: white;
+    float: right;
+    text-decoration:none;
+}
 @media only screen and (min-width: 100px) {
     /* For tablets: 
 
@@ -40,11 +97,14 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px )and (max-width:900px) {
      /*For desktop: will change the container class to orange*/
 
     .container-fluid {
         background-color: lightgreen;
+    }
+    .resourceNav {
+        flex-direction:column;
     }
 }
 
@@ -60,7 +120,7 @@
      /*For desktop: will change the container class to orange
 */
     .container-fluid {
-        background-color: lightsalmon;
+        background-color:lightgrey;
     }
 }
 
