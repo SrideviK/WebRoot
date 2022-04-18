@@ -1,7 +1,8 @@
 
-.main{
-    width:70%;
-    margin:auto;
+.main {
+    width: 70%;
+    margin: auto;
+    font-size: medium;
 }
 .container-fluid {
     /*    background-color: aquamarine;
@@ -17,6 +18,7 @@ a{
 }
 .about{
     display:flex;
+    
     
 }
 .item{
@@ -70,6 +72,7 @@ a{
         border: 1px black solid;
         padding:.5em .4em;
         margin:0em;
+       text-align:center;
     }
     .resourceDescription {
         background-color: lightgrey;
@@ -86,7 +89,7 @@ nav a {
     float: right;
     text-decoration:none;
 }
-@media only screen and (min-width: 100px) {
+@media only screen and (min-width: 100px) and (max-width:900px) {
     /* For tablets: 
 
      this will change the container class background to red when tablet*/
@@ -95,23 +98,27 @@ nav a {
         background-color: blanchedalmond;
         flex-direction: row;
     }
+    .resourceNav {
+        flex-direction: column;
+    }
+    .resourceDescription {
+        background-color: blanchedalmond;
+    }
 }
 
-@media only screen and (min-width: 768px )and (max-width:900px) {
+@media only screen and (min-width: 768px ) {
      /*For desktop: will change the container class to orange*/
 
-    .container-fluid {
+    .container-fluid, .resourceDescription {
         background-color: lightgreen;
     }
-    .resourceNav {
-        flex-direction:column;
-    }
+
 }
 
 @media only screen and (min-width: 992px) {
     /* For desktop: will change the container class to orange*/
 
-.container-fluid {
+    .container-fluid, .resourceDescription {
         background-color: lightyellow;
     }
 }
@@ -119,8 +126,8 @@ nav a {
 @media only screen and (min-width: 1200px) {
      /*For desktop: will change the container class to orange
 */
-    .container-fluid {
-        background-color:lightgrey;
+    .container-fluid, .resourceDescription {
+        background-color: lightgrey;
     }
 }
 
